@@ -1,0 +1,66 @@
+name: Auto Squash LeetHub Commits
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  squash:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Git
+        run: |
+          git config user.name "pwrwpw"
+          git config user.email "pwrwpw.dev@gmail.com"
+
+      - name: Get last 4 commits
+        id: commits
+        run: |
+          git log -4 --pretty=format:"%H %s" > commits.txt
+          cat commits.txt
+
+      - name: Conditional squash
+        run: |
+          mapfile -t msgs < <(awk '{ $1=""; print substr($0,2) }' commits.txt)
+          found_updated_stats=false
+          for m in "${msgs[@]}"; do
+            if [[ "$m" == "Updated stats" ]]; then
+              found_updated_stats=true
+              break
+            fi
+          done
+          found_all=true
+          required=("Create README - LeetHub" "Time:" "Update README - Topic Tags" "Updated stats")
+          for req in "${required[@]}"; do
+            ok=false
+            for m in "${msgs[@]}"; do
+              if [[ "$m" == "$req"* ]]; then
+                ok=true
+                break
+              fi
+            done
+            if [ "$ok" = false ]; then
+              found_all=false
+              break
+            fi
+          done
+          if [ "$found_updated_stats" = true ] && [ "$found_all" = true ]; then
+            echo "Found all 4 LeetHub commits. Squashing..."
+            git reset --soft HEAD~4
+            for m in "${msgs[@]}"; do
+              if [[ "$m" == Time:* ]]; then
+                git commit -m "$m"
+                break
+              fi
+            done
+            # force push
+            git push --force
+          else
+            echo "Conditions not met. Skipping squash."
+          fi
