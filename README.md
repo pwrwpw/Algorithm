@@ -4,6 +4,7 @@
 ## Database
 |  |
 | ------- |
+| [0175-combine-two-tables](https://github.com/pwrwpw/Algorithm/tree/master/0175-combine-two-tables) |
 | [0184-department-highest-salary](https://github.com/pwrwpw/Algorithm/tree/master/0184-department-highest-salary) |
 | [0262-trips-and-users](https://github.com/pwrwpw/Algorithm/tree/master/0262-trips-and-users) |
 ## Array
