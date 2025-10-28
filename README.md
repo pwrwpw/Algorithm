@@ -31,6 +31,7 @@
 |  |
 | ------- |
 | [0002-add-two-numbers](https://github.com/pwrwpw/Algorithm/tree/master/0002-add-two-numbers) |
+| [0464-can-i-win](https://github.com/pwrwpw/Algorithm/tree/master/0464-can-i-win) |
 ## Recursion
 |  |
 | ------- |
@@ -51,4 +52,24 @@
 |  |
 | ------- |
 | [3616-make-array-elements-equal-to-zero](https://github.com/pwrwpw/Algorithm/tree/master/3616-make-array-elements-equal-to-zero) |
+## Dynamic Programming
+|  |
+| ------- |
+| [0464-can-i-win](https://github.com/pwrwpw/Algorithm/tree/master/0464-can-i-win) |
+## Bit Manipulation
+|  |
+| ------- |
+| [0464-can-i-win](https://github.com/pwrwpw/Algorithm/tree/master/0464-can-i-win) |
+## Memoization
+|  |
+| ------- |
+| [0464-can-i-win](https://github.com/pwrwpw/Algorithm/tree/master/0464-can-i-win) |
+## Game Theory
+|  |
+| ------- |
+| [0464-can-i-win](https://github.com/pwrwpw/Algorithm/tree/master/0464-can-i-win) |
+## Bitmask
+|  |
+| ------- |
+| [0464-can-i-win](https://github.com/pwrwpw/Algorithm/tree/master/0464-can-i-win) |
 <!---LeetCode Topics End-->
