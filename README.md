@@ -17,6 +17,7 @@
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/pwrwpw/Algorithm/tree/master/0001-two-sum) |
+| [3616-make-array-elements-equal-to-zero](https://github.com/pwrwpw/Algorithm/tree/master/3616-make-array-elements-equal-to-zero) |
 ## Hash Table
 |  |
 | ------- |
@@ -42,4 +43,12 @@
 |  |
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/pwrwpw/Algorithm/tree/master/0003-longest-substring-without-repeating-characters) |
+## Simulation
+|  |
+| ------- |
+| [3616-make-array-elements-equal-to-zero](https://github.com/pwrwpw/Algorithm/tree/master/3616-make-array-elements-equal-to-zero) |
+## Prefix Sum
+|  |
+| ------- |
+| [3616-make-array-elements-equal-to-zero](https://github.com/pwrwpw/Algorithm/tree/master/3616-make-array-elements-equal-to-zero) |
 <!---LeetCode Topics End-->
